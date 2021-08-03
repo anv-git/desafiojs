@@ -7,3 +7,4 @@ menu.addEventListener('click', () => {
   nav.classList.toggle('slide');
   document.querySelector(".menu__navegation--position").classList.toggle("active");
   });
+  

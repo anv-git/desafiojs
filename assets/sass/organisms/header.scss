@@ -1,0 +1,120 @@
+.menu{
+    padding: 20px;
+    background-color: $color_black;
+    &__navegation{
+        color: $color_white;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        &--anchor{
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            display: none;
+            &--list{
+                padding: 0;
+                &--link{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 30px;
+                    color: $color_white;
+                    text-decoration: none;
+                   
+                    &:hover{
+                        background-color: $color_moregray;
+                        transition: 0.5s;
+                    }
+                }
+            }
+            
+        }
+        &--position{
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            position: absolute;
+            left: 90%;
+            &.active{
+            #barOne{
+                transform: rotate(45deg) translateX(6px) translateY(1px);
+                }
+            #barTwo{
+                opacity: 0;
+            }
+            #barThree{
+                transform: rotate(-45deg) translateX(10px) translateY(-6px);
+            }
+            }
+            &--bar{ 
+                display:block;
+                width:28px;
+                height:3px;
+                background-color: $color_moregray;
+                border-radius: 3px;
+                transition: all 0.3s;
+                margin-top: 5px;
+            }
+            
+               
+            }
+        }
+       
+    }
+@media (max-width:768px){
+    .slide{
+        display: unset;
+    }
+    }
+    .transition{
+        transition: 1s ease;
+    }
+
+
+
+
+
+@media (min-width: $tablet-min){
+    .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0 20px 20px;
+        background-color: $color_black;
+        &__navegation{
+            color: $color_white;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            &--anchor{
+                flex-direction: unset;
+                display: flex;
+                justify-content: flex-end;
+                list-style-type: none;
+                margin-top: 0;
+                &--list{
+                    margin:0 0 0 0;
+                    padding: 0;
+                    &--link{
+                        display: unset;
+                        padding: 60px;
+                        color: $color_white;
+                        text-decoration: none;
+                        &:hover{
+                            background-color: $color_moregray;
+                        }
+                    }
+                }
+                
+            }
+            &--position{
+                display: none;
+            }
+
+        }
+    
+    }
+
+}

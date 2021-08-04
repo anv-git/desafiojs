@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <title>Slider</title>
 </head>
-<body>
+<body onload="slide1()">
     <header class="menu">
         <nav class="menu__navegation">
             <h1 class="menu__logo">DesafioJS</h1>
@@ -24,7 +24,11 @@
          <li class="menu__navegation--anchor--list"><a class="menu__navegation--anchor--list--link" href="tabs.html">Tabs</a></li>
       </ul>
     </header>
-    <h1>Slider</h1>
-    <script src="/assets/js/burger.js"></script>
+    <section class="slide">
+        <div class="slide__position">
+            <img src="assets/images/valtech1.jpg" alt="slide" class="slide__position--photos" id="photos">
+        </div>
+    </section>
+    <script src="/assets/js/slide.js"></script>
 </body>
 </html>

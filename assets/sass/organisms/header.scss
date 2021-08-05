@@ -63,6 +63,10 @@
         }
        
     }
+
+    .transition{
+        transition: 1s;
+    }
 @media (max-width:768px){
     .slide{
         display: unset;

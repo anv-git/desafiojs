@@ -64,6 +64,10 @@
         }
        
     }
+
+    .transition{
+        transition: 1s;
+    }
 @media (max-width:768px){
     .slide{
         margin: 0;

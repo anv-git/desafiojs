@@ -1,0 +1,32 @@
+.slide{
+    
+    &__position{
+        display: flex;
+        justify-content: center;
+        
+        &--photos{
+            cursor: pointer;
+            max-width:100%;
+            height: auto;
+           
+            
+        }
+    }
+}
+
+
+@media (min-width:$tablet-min){
+    .slide{
+        margin-top: 100px;
+        &__position{
+            display: flex;
+            justify-content: center;
+            &--photos{
+                border: $color_red solid 5px;
+                border-radius: 10px;
+                box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.56);
+                padding: 10px;
+            }
+        }
+    }
+}
